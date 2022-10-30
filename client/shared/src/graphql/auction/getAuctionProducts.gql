@@ -1,0 +1,16 @@
+query AuctionProducts($auctionId: HashIds!, $options: PagePaginationInput) {
+  getAuctionItems(id: $auctionId, options: $options) {
+    count
+    pages
+    results {
+      id
+      name
+      description
+      images
+      weight
+      weightUnit
+      year
+      images
+    }
+  }
+}

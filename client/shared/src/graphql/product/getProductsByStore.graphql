@@ -1,0 +1,15 @@
+query ProductsByStore($store: HashIds!, $options: PagePaginationInput) {
+  getProductsByStore(store: $store, options: $options) {
+    results {
+      id
+      name
+      description
+      images
+      weightUnit
+      weight
+      year
+    }
+    count
+    pages
+  }
+}

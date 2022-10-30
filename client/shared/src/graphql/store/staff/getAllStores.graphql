@@ -1,0 +1,16 @@
+query AllStores($options: PagePaginationInput) {
+  _getAllStores(options: $options) {
+    count
+    pages
+    results {
+      id
+      name
+      owner {
+        firstName
+        lastName
+        id
+        email
+      }
+    }
+  }
+}

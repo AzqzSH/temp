@@ -1,0 +1,16 @@
+query Me {
+  me {
+    id
+    active
+    email
+    firstName
+    lastName
+    phoneNumber
+    partner
+    staff
+    store {
+      id
+      name
+    }
+  }
+}

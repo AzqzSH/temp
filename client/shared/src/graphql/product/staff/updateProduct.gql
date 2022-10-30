@@ -1,0 +1,3 @@
+mutation StaffUpdateProduct($input: UpdateProductInput!, $store: HashIds) {
+  _updateProduct(input: $input, store: $store)
+}

@@ -1,0 +1,16 @@
+query UpcomingAuction {
+  getUpcomingAuction {
+    id
+    name
+    startDate
+    items {
+      description
+      id
+      name
+      weight
+      weightUnit
+      year
+      images
+    }
+  }
+}

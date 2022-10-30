@@ -1,0 +1,9 @@
+{
+  "name": "coin-display",
+  "private": true,
+  "workspaces": [
+    "shared",
+    "listings",
+    "portal"
+  ]
+}

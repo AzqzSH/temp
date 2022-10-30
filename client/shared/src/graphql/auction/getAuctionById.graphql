@@ -1,0 +1,16 @@
+query AuctionById($id: HashIds!) {
+  getAuction(id: $id) {
+    id
+    name
+    startDate
+    items {
+      id
+      name
+      description
+      weight
+      weightUnit
+      year
+      images
+    }
+  }
+}

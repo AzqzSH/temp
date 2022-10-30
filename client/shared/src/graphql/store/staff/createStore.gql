@@ -1,0 +1,3 @@
+mutation StaffCreateStore($owner: String!, $input: CreateStoreInput!) {
+  _createStore(owner: $owner, input: $input)
+}

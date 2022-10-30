@@ -1,0 +1,13 @@
+query AllAuctions($options: PagePaginationInput) {
+  getAllAuctions(options: $options) {
+    count
+    pages
+    results {
+      itemCount
+      name
+      startDate
+      visible
+      id
+    }
+  }
+}

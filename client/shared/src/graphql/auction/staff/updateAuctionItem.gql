@@ -1,0 +1,3 @@
+mutation UpdateAuctionItem($input: UpdateAuctionItemInput!) {
+  _updateAuctionItem(input: $input)
+}

@@ -1,0 +1,20 @@
+query AllProducts($options: PagePaginationInput, $filters: ProductFilters) {
+  _getAllProducts(options: $options, filters: $filters) {
+    count
+    pages
+    results {
+      name
+      description
+      images
+      id
+      store {
+        id
+        name
+      }
+      price
+      year
+      weightUnit
+      weight
+    }
+  }
+}

@@ -1,0 +1,16 @@
+query MyProducts($options: PagePaginationInput) {
+  getMyProducts(options: $options) {
+    count
+    pages
+    results {
+      id
+      nameEn
+      descriptionEn
+      images
+      price
+      weight
+      weightUnit
+      year
+    }
+  }
+}

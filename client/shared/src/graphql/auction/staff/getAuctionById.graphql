@@ -1,0 +1,28 @@
+query StaffAuctionById($id: HashIds!) {
+  _getAuction(id: $id) {
+    id
+    name
+    startDate
+    visible
+    items {
+      id
+      buyer
+      order
+      sellPrice
+      product {
+        nameEn
+        id
+        images
+        weight
+        weightUnit
+        price
+        year
+        descriptionEn
+        store {
+          id
+          name
+        }
+      }
+    }
+  }
+}

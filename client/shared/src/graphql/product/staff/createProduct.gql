@@ -1,0 +1,3 @@
+mutation StaffCreateProduct($input: CreateProductInput!, $store: HashIds!) {
+  _createProduct(input: $input, store: $store)
+}

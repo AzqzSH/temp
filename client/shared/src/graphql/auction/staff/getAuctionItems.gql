@@ -1,0 +1,27 @@
+query StaffAuctionItems($auctionId: HashIds!, $options: PagePaginationInput) {
+  _getAuctionItems(id: $auctionId, options: $options) {
+    pages
+    count
+    results {
+      buyer
+      id
+      sellPrice
+      order
+      productId
+      product {
+        id
+        name
+        description
+        price
+        year
+        weight
+        weightUnit
+        images
+        store {
+          name
+          id
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,3 @@
+mutation StaffRemoveProduct($productId: HashIds!) {
+  _removeProduct(id: $productId)
+}

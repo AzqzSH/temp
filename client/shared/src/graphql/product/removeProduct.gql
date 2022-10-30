@@ -1,0 +1,3 @@
+mutation RemoveProduct($removeProductId: HashIds!) {
+  removeProduct(id: $removeProductId)
+}

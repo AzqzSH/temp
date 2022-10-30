@@ -1,0 +1,3 @@
+mutation StaffRemoveStore($removeStoreId: HashIds!) {
+  _removeStore(id: $removeStoreId)
+}

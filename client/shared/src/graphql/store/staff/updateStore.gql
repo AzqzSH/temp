@@ -1,0 +1,3 @@
+mutation StaffUpdateStore($store: HashIds!, $input: UpdateStoreInput!) {
+  _updateStore(store: $store, input: $input)
+}
